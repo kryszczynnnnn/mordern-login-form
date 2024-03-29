@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+body {
+    background-color: #ebc8ff;
+    background: linear-gradient(to right, #ebc8ff, #ffd298);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 400px;
+    max-width: 100%;
+    min-height: 329px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container input {
+    border: none;
+    background-color: #e6e3e3;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    width: 100%;
+    
+}
+
+.container.active .sign-in, .container.active .toggle-signin {
+    display: none;
+}
+
+.container.active .sign-up, .container.active .toggle-signup {
+    display: flex;
+}
+
+.social-icons {
+    margin: 10px;
+}
+
+.social-icons a{
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    background-color: #ebebeb;
+    transition: 0.3s;
+}
+
+.form-container{
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container form button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 70px;
+    background-color: #ebc8ffa6;
+    font-weight: 600;
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container span {
+    font-size: 14px;
+}
+
+.form-container form button:hover {
+    background-color: #ebc8ff;
+    box-shadow: 0 0 20px #ebc8ff;
+    transition: 0.3s;
+    transform: scaleX(1.03);
+}
+
+
+.toggle {
+    border-radius: 10px 10px 30px 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebc8ff;
+    background: linear-gradient(to right, #ebc8ff, #ffd298);
+}
+
+.toggle-signup {
+    display: none;
+}
+
+.sign-up {
+    display: none;
+}
+
+.toggle-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    margin: 10px 50px;
+    background-color: transparent;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+    transition: 0.5s;
+}
+
+.toggle-btn:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+p {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+    margin: 0px 0px 5px 0px;
+}
+
